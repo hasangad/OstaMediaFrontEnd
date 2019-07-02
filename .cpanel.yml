@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/ostamediadmin/public_html/FrontEnd/
     #- /bin/cp /assets/scss/style.scss $DEPLOYPATH
-    - /bin/cp * $DEPLOYPATH
+    #- /bin/cp * $DEPLOYPATH
     - /bin/cp /assets/scss/style.scss $DEPLOYPATH
