@@ -60,10 +60,19 @@ main {
             margin-bottom: 10px;
             font-size: 1.1rem;
             /*background: #eeeeee;*/
+            &:hover {
+              color: #780505; }
           }
           p {
             color: lighten($dark-color, 40%);
             font-size: 0.85rem;
+            &:hover {
+              color: #000000; }
+             
+          }
+          &:hover {
+            background: #ffc107;
+            @include transition(300ms);
           }
         }
       }
