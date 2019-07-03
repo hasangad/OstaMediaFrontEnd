@@ -7,7 +7,7 @@ footer {
   .footer-left {
     p {
       display: inline;
-      color: #99a9b5;
+      color: #ffffff;
       font-size: 0.85rem;
     }
     span {
@@ -32,12 +32,12 @@ footer {
         height: 25px;
 
         border-radius: 50%;
-        background-color: #99a9b5;
+        border: #ffffff 1px solid;
         transition: all 0.3s ease-in;
         svg {
           height: 15px;
           width: 15px;
-          fill: #3d4755;
+          fill: #ffffff;
           transition: all 0.3s ease-in;
         }
       }
