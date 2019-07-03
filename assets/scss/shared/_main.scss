@@ -22,7 +22,7 @@ main {
         flex-flow: column;
         position: relative;
         @include transition(300ms);
-        /*background: #eeeeee;*/
+        background: #ffffff;
         a {
           position: absolute;
           top: 0;
@@ -61,14 +61,15 @@ main {
             font-size: 1.1rem;
             /*background: #eeeeee;*/
             &:hover {
-              color: #780505; }
+              color: #780505;
+             }
           }
           p {
             color: lighten($dark-color, 40%);
             font-size: 0.85rem;
             &:hover {
-              color: #000000; }
-             
+              color: #000000;
+             }             
           }
           &:hover {
             background: #ffc107;
