@@ -22,7 +22,7 @@ main {
         flex-flow: column;
         position: relative;
         @include transition(300ms);
-        background: #eeeeee;
+        /*background: #eeeeee;*/
         a {
           position: absolute;
           top: 0;
