@@ -82,9 +82,10 @@
     border: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    background: #efefef;
   }
   button{
-    background: #009bdf;
+    background: #dc3545;
     border: 0;
     width: 40px;
     height: 40px;
@@ -186,7 +187,9 @@
 }
 
 .nav-header {
-  float: right;
+  /*float: right;*/
+  display: table;
+  margin: 10px auto;
 }
 
 .navigation-hidden .nav-header {
