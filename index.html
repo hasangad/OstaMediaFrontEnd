@@ -287,11 +287,11 @@
             <img v-if="post.post.thumb"  :src="post.post.source_url" alt="" />
           </div>
           <div class="prog-info">
-            <h2 v-html="post_title"></h2>
-            <p v-html="post.post_content"></p>
+            <h2 v-html="post.post.post_title"></h2>
+            <p v-html="post.post.post_content"></p>
             <!--<p>إعادة من الأحد إلى الخميس 1:30 صباحا </p>-->
           </div>
-          <a v-bind:href="'?p='+post.id"></a>
+          <a v-bind:href="'?p='+post.post.id"></a>
         </div>
 
         <!--
