@@ -284,11 +284,11 @@
         <!--<div class="program-container" v-for="post, i in posts.slice(0,8)">-->
           <div class="program-container" v-for="post, i in posts">
             <div class="prog-img" >
-              <video width="200" height="250" style="width: 100%" controls v-if="post.post.type = [ video/mp4 ]">
+              <video  v-if="post.post.source_url" v-if="post.post.type = 'video/mp4'" width="200" height="250" style="width: 100%" controls>
                 <source :src="post.post.source_url" type="video/mp4">
               Your browser does not support the video tag.
               </video>
-              <img v-if="post.post.source_url"  :src="post.post.thumb[0]" alt="" v-if="post.post.type = [ image/jpeg ]" />
+              <img v-if="post.post.source_url"  v-if="post.post.type = [ image/jpeg ]" :src="post.post.thumb[0]" alt="" />
             </div>
           <div class="prog-info">
             <h2 v-html="post.post.title"></h2>
