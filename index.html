@@ -286,8 +286,8 @@
             <img v-if="post.thumb"  :src="post.source_url alt="" />
           </div>
           <div class="prog-info">
-            <h2 v-html="post.post_title.substring(0, 200)"></h2>
-            <p v-html="post.post_content.substring(0, 200)"></p>
+            <h2 v-html="post.post_title"></h2>
+            <p v-html="post.post_content"></p>
             <!--<p>إعادة من الأحد إلى الخميس 1:30 صباحا </p>-->
           </div>
           <a v-bind:href="'?p='+post.id"></a>
