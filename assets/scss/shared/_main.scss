@@ -35,6 +35,11 @@ main {
           background: #eee;
           @include transition(300ms);
         }
+
+        &:hover .prog-info {
+          background: #ffc107;
+          @include transition(300ms);
+        }
         .prog-img {
           overflow: hidden;
           height: auto;
