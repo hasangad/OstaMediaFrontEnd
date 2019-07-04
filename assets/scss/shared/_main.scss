@@ -31,15 +31,7 @@ main {
           width: 100%;
           height: 100%;
         }
-        &:hover {
-          background: #eee;
-          @include transition(300ms);
-        }
-
-        &:hover .prog-info {
-          background: #ffc107;
-          @include transition(300ms);
-        }
+        
         .prog-img {
           overflow: hidden;
           height: auto;
@@ -59,9 +51,6 @@ main {
           width: 100%;
           display: block;
           text-align: center;
-          &:hover {
-            background: #ffc107;
-            @include transition(300ms);
           }
           h2 {
             color: $dark-color;
@@ -69,20 +58,30 @@ main {
             margin-bottom: 10px;
             font-size: 1.1rem;
             /*background: #eeeeee;*/
-            &:hover {
-              color: #780505;
-             }
           }
           p {
             color: lighten($dark-color, 40%);
             font-size: 0.85rem;
-            &:hover {
-              color: #000000;
-             }             
+
+          }
+          &:hover .prog-info {
+            background: #ffc107;
+            @include transition(300ms);
+          }
+          &:hover h2 {
+            color: #780505;
+           }
+          &:hover p {
+            color: #000000;
+           }  
+
+           &:hover {
+            background: #eee;
+            @include transition(300ms);
           }
           
         }
       }
     }
   }
-}
+
