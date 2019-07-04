@@ -54,6 +54,10 @@ main {
           width: 100%;
           display: block;
           text-align: center;
+          &:hover {
+            background: #ffc107;
+            @include transition(300ms);
+          }
           h2 {
             color: $dark-color;
             font-weight: bold;
@@ -71,10 +75,7 @@ main {
               color: #000000;
              }             
           }
-          &:hover {
-            background: #ffc107;
-            @include transition(300ms);
-          }
+          
         }
       }
     }
