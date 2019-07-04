@@ -284,7 +284,7 @@
         <!--<div class="program-container" v-for="post, i in posts.slice(0,8)">-->
           <div class="program-container" v-for="post, i in posts">
             <div class="prog-img">
-              <img v-if="post.post.source_url"  :src="post.post.thumb" alt="" />
+              <img v-if="post.post.source_url"  :src="post.post.thumb[0]" alt="" />
             </div>
           <div class="prog-info">
             <h2 v-html="post.post.title"></h2>
