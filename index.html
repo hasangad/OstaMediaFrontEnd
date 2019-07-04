@@ -284,10 +284,10 @@
         <!--<div class="program-container" v-for="post, i in posts.slice(0,8)">-->
           <div class="program-container" v-for="post, i in posts">
             <div class="prog-img">
-            <img v-if="thumb"  :src="source_url" alt="" />
+            <img v-if="post.post.thumb"  :src="post.post.source_url" alt="" />
           </div>
           <div class="prog-info">
-            <h2 v-html="post.post_title"></h2>
+            <h2 v-html="post_title"></h2>
             <p v-html="post.post_content"></p>
             <!--<p>إعادة من الأحد إلى الخميس 1:30 صباحا </p>-->
           </div>
